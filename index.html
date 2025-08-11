@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Clint Carney</title>
+  <meta name="description" content="Automation engineer: factory test systems, SQL, C++ Builder, Python, and data tools." />
+  <style>
+    :root {
+      --bg: #0b1220;
+      --bgSoft: #0f1a2d;
+      --text: #eaf0ff;
+      --muted: #b8c4e8;
+      --brand: #5fb0ff;
+      --accent: #8ef0c2;
+      --card: #0d1730;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --radius: 16px;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; background: var(--bg); color: var(--text); line-height: 1.6; }
+    a { color: var(--brand); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { width: 100%; max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+    header { position: sticky; top: 0; z-index: 50; backdrop-filter: saturate(180%) blur(8px); background: linear-gradient(180deg, rgba(11,18,32,.9), rgba(11,18,32,.6) 60%, rgba(11,18,32,0)); border-bottom: 1px solid rgba(255,255,255,.07); }
+    .nav { display: flex; align-items: center; justify-content: space-between; padding: 14px 0; }
+    .brand { font-weight: 700; letter-spacing: .5px; }
+    .navLinks { display: flex; gap: 18px; align-items: center; }
+    .navLinks a { opacity: .9; }
+    .ctaBtn { display: inline-block; padding: 10px 16px; border-radius: 12px; background: linear-gradient(135deg, var(--brand), var(--accent)); color: #0b1220; font-weight: 700; box-shadow: var(--shadow); }
+    .ctaBtn:hover { transform: translateY(-1px); box-shadow: 0 14px 34px rgba(0,0,0,.45); }
+    .hero { position: relative; overflow: hidden; }
+    .heroInner { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 24px; align-items: center; padding: 56px 0 40px; }
+    .hero h1 { font-size: clamp(32px, 5vw, 56px); line-height: 1.05; margin: 0 0 16px; }
+    .hero p { margin: 0 0 24px; color: var(--muted); font-size: 1.06rem; }
+    .mountainWrap { position: relative; }
+    .mountain { width: 100%; height: auto; display: block; filter: drop-shadow(0 30px 60px rgba(0,0,0,.45)); }
+    section { padding: 64px 0; }
+    section h2 { font-size: clamp(24px, 3.5vw, 34px); margin: 0 0 8px; }
+    section p.lead { margin: 0 0 22px; color: var(--muted); }
+    .grid { display: grid; gap: 16px; }
+    .grid.cols3 { grid-template-columns: repeat(3, 1fr); }
+    .grid.cols2 { grid-template-columns: repeat(2, 1fr); }
+    .card { background: linear-gradient(180deg, var(--card), #0a1430 120%); border: 1px solid rgba(255,255,255,.06); border-radius: var(--radius); padding: 18px; box-shadow: var(--shadow); }
+    .card h3 { margin: 0 0 6px; font-size: 20px; }
+    .card p { margin: 0; color: var(--muted); }
+    form { display: grid; gap: 12px; max-width: 560px; }
+    input, textarea { background: #0c1633; color: var(--text); border: 1px solid rgba(255,255,255,.08); border-radius: 12px; padding: 12px 14px; font-size: 16px; }
+    textarea { min-height: 120px; resize: vertical; }
+    .sendBtn { justify-self: start; }
+    footer { border-top: 1px solid rgba(255,255,255,.07); padding: 28px 0 40px; color: var(--muted); }
+    @media (max-width: 900px) { .heroInner { grid-template-columns: 1fr; padding-top: 34px; } }
+    @media (max-width: 720px) { .grid.cols3 { grid-template-columns: 1fr; } .grid.cols2 { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">Clint Carney</div>
+      <nav class="navLinks">
+        <a href="#about">About</a>
+        <a href="#projects">Work</a>
+        <a href="#contact" class="ctaBtn">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container heroInner">
+        <div>
+          <h1>Automation engineer: test systems and data tools</h1>
+          <p>I build practical software for manufacturing: production test apps, SQL reports, and small utilities in C++ and Python. I also climb and run, which keeps my systems thinking sharp.</p>
+          <a class="ctaBtn" href="#projects">See work</a>
+        </div>
+        <div class="mountainWrap" aria-hidden="true">
+          <svg class="mountain" viewBox="0 0 900 520" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Stylized mountain range">
+            <defs>
+              <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+                <stop offset="0%" stop-color="#0a1b38" />
+                <stop offset="100%" stop-color="#071024" />
+              </linearGradient>
+              <linearGradient id="peak" x1="0" x2="1">
+                <stop offset="0%" stop-color="#5fb0ff" />
+                <stop offset="100%" stop-color="#8ef0c2" />
+              </linearGradient>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#sky)" />
+            <g opacity="0.35">
+              <circle cx="140" cy="110" r="46" fill="#fff" />
+            </g>
+            <g>
+              <polygon points="50,420 260,180 380,330 520,130 760,420" fill="#162447" />
+              <polygon points="90,420 300,200 420,330 560,150 800,420" fill="#1b2b55" />
+              <polygon points="140,420 340,230 470,340 600,190 840,420" fill="#213160" />
+              <polygon points="252,192 276,222 240,222" fill="url(#peak)" />
+              <polygon points="520,140 548,174 496,174" fill="url(#peak)" />
+              <polygon points="600,198 624,228 588,228" fill="url(#peak)" />
+            </g>
+            <rect y="360" width="100%" height="180" fill="#0b1220" opacity="0.55" />
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <h2>About</h2>
+        <p class="lead">I focus on results: reliable test automation, clear data, and less manual work. This site shares a few examples and ways to reach me.</p>
+        <div class="grid cols3">
+          <div class="card">
+            <h3>Factory test systems</h3>
+            <p>C++ Builder and Python, instrument control, repeatable workflows, operator friendly UIs.</p>
+          </div>
+          <div class="card">
+            <h3>Data and SQL</h3>
+            <p>T SQL, ETL, reporting, trend analysis, capability studies.</p>
+          </div>
+          <div class="card">
+            <h3>Apps and dashboards</h3>
+            <p>Tools that ship fast and solve a real need at the station or on the floor.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <h2>Work</h2>
+        <p class="lead">Selected projects.</p>
+        <div class="grid cols3">
+          <article class="card">
+            <h3>DefectCheck</h3>
+            <p>Final inspection tool for the F900 line: faster checks and better notes.</p>
+            <p><a href="#">View details</a></p>
+          </article>
+          <article class="card">
+            <h3>StratDash</h3>
+            <p>Live production dashboard and quick extract tools.</p>
+            <p><a href="#">View details</a></p>
+          </article>
+          <article class="card">
+            <h3>Smart bins and scales</h3>
+            <p>RS232 scale hub with Modbus lights: plan for guided parts picking.</p>
+            <p><a href="#">View details</a></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p class="lead">Use the form or reach out by email.</p>
+        <form action="mailto:clint@example.com" method="post" enctype="text/plain">
+          <input name="name" placeholder="Your name" required />
+          <input name="email" type="email" placeholder="Your email" required />
+          <textarea name="message" placeholder="Your message" required></textarea>
+          <button class="ctaBtn sendBtn" type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <small>© <span id="year"></span> Clint Carney</small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
